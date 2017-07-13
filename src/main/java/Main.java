@@ -28,6 +28,11 @@ public class Main {
               ctx.render("Hello!");
             })
 
+            .get("testing", ctx -> {
+              ctx.render("look at this!");
+            })
+
+
             .get("db", ctx -> {
               boolean local = !"cedar-14".equals(System.getenv("STACK"));
 
